@@ -12,12 +12,12 @@ from aiogram.types import Message
 from aiogram.utils.markdown import hbold
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-TOKEN = "7149543830:AAFl1ZLv4DYr9Z0reu-7j0sdeg8_oqS_ENY"
+TOKEN = " " # Telegram bot token
 
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
-SUPER_ADMIN = 895775406
-ADMIN = [180519876, 895775406]
+SUPER_ADMIN = 11111111 # Main admin user_id
+ADMIN = [1111111, 1111111] # Other admins' user_id
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
